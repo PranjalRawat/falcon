@@ -1,0 +1,164 @@
+{% load staticfiles %}
+
+
+@media only screen and (max-width: 1124px) {
+
+  .navbar-center{
+    text-align: center;
+    margin-left: 10%;
+  }
+  .navbar-right{
+    margin-right: 0px;
+    padding:0;
+  }
+  .python_features li{
+    padding-left:40px;
+  }
+  .python_features h2{
+    font-size:30px;
+  }
+  .python_logo img{
+    width:100%;
+    margin-left:40px;
+  }
+
+}
+@media only screen and (max-width: 990px) {
+  .python_logo img{
+    display:none;
+  }
+  .python_features h2{
+    font-size:30px;
+  }
+  .python_features li{
+    padding-left:30%;
+    font-size:20px;
+  }
+  #id_username{
+    display:none;
+  }
+}
+@media only screen and (max-width: 767px) {
+
+  body{
+    margin:0;
+    padding:0;
+  }
+  .container-fluid{
+    margin:0;
+  }
+  .navbar-center{
+    margin:0;
+    text-align: center;
+  }
+
+  .navbar-right{
+    margin:0;
+    padding:0;
+    text-align:center;
+    border-top:2px solid white;
+  }
+
+  .collapse{
+    padding-left:25%;
+    padding-right:25%;
+ }
+ .nav li:hover{
+   background-color: #ccd4e2 !important;
+ }
+ #id_username{
+   display:none;
+ }
+  .content{
+    margin-top:25%;
+  }
+  .content em{
+    font-size:0px;
+  }
+  .content h2{
+    font-size:70px;
+    color:skyblue;
+  }
+  .content h3{
+    font-size:20px;
+  }
+  .content p{
+    font-size:20px;
+    line-height: 30px;
+  }
+  .python{
+    padding:10px;
+  }
+  .python h2{
+    font-size:20px;
+  }
+  .python p{
+    padding-top:10px;
+    font-size:14px;
+    line-height:25px;
+  }
+  .dwnld_install h2{
+    font-size:20px;
+  }
+  .dwnld_install p{
+    font-size:14px;
+    padding-left:10px;
+    line-height:30px;
+  }
+  .python_logo img{
+    display: none;
+  }
+  .form_f{
+    margin:10px;
+  }
+  .python_features{
+    padding:10px;
+  }
+  .python_features h2{
+    font-size:20px;
+  }
+  .python_features li{
+    padding-left:15%;
+    font-size:14px;
+  }
+  .python_companies h2{
+    font-size:19px;
+  }
+  .python_companies img{
+    padding:0px;
+    height:250px;
+  }
+  .social {
+    font-size:20px;
+    padding:10px 0 ;
+    border-top-left-radius:0%;
+    border-top-right-radius:0%;
+  }
+  .social li {
+    margin: 0 5px;
+
+  }
+  .sidebar{
+    margin-top:-20px;
+    margin:0px;
+  }
+  #mySidenav{
+    width:0px;
+  }
+  #magic_btn{
+    display:block;
+    padding:0px;
+    margin:0px;
+  }
+  #main{
+    padding:5px;
+    padding-left:15px;
+    margin:0px;
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .python_features li{
+    padding-left:0px;
+  }
+}

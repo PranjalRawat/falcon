@@ -1,0 +1,104 @@
+{% load staticfiles %}
+
+.navbar{
+  background: url("/static/Falcon/images/nav.png") 50% no-repeat ;
+  padding:15px;
+  position:relative;
+  margin:0px 0px 0px 0px;
+  border-bottom: 5px solid #141414;
+  background-size: cover;
+}
+body{
+  overflow: hidden !important;
+
+}
+.container-fluid{
+  margin:0px;
+  padding:0px;
+}
+.row{
+  padding:0;
+  margin:0;
+}
+.sidebar{
+  font-family:"Georgia", serif;
+  padding:0;
+  width:321px;
+  margin:0;
+  background-color: #465e84 !important;
+  border-right:10px solid #141414;
+  text-align: left;
+  height:86vh;
+
+}
+.sidebar button{
+  background-color: #465e84 !important;
+}
+.sidebar button i{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.sidebar h2 {
+  padding:10px;
+  color: #141414;
+  font-size: 30px;
+}
+.sidebar ul{
+  padding:10px;
+}
+.sidebar li{
+  list-style-type: none;
+  text-align: left;
+  text-decoration: none;
+}
+.sidebar a:hover{
+  text-decoration: none;
+  color:#ed682f;
+}
+.sidebar li a{
+  color:#fff;
+  font-size:19px;
+  text-align: left;
+
+}
+
+.sidenav {
+  position:absolute;
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding:0;
+    padding-top: 10px;
+
+}
+
+.sidenav a {
+    display: block;
+    transition: 0.3s;
+}
+
+.openbtn{
+  position: relative !important;
+  float:right !important;
+}
+.openbtn i{
+  font-size:20px;
+  padding:10px;
+}
+.other_section{
+  height:80vh;
+  padding:10px;
+  overflow-y: auto;
+}
+#magic_btn{
+  display:none;
+  padding:0;
+  float: left !important;
+}
+#main{
+  margin-left: 321px;
+  transition: margin-left .5s;
+  padding-left: 20px;
+
+}

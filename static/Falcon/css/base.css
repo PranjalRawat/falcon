@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+body{
+  font-family:sans-serif;
+  margin:0px;
+  padding:0px;
+}
+
+.container-fluid{
+  margin:0px;
+  padding:10px;
+}
+
+/*  Navigation  */
+.navbar{
+  font-size:12pt;
+  background-color: transparent;
+  font-weight: bold;
+}
+.nav a{
+  color: black;
+}
+
+.nav li:hover{
+  background-color: #b4ead5 !important;
+}
+.icon-bar{
+  background-color: black;
+}
+.navbar-center{
+  text-align: center;
+  margin-left: 18%;
+}
+.navbar-right{
+  margin-right: 0px;
+  padding:0;
+  text-align: right;
+}
+#id_username{
+  color:#fff;
+}

@@ -1,0 +1,88 @@
+{% extends 'Falcon/base2.html' %}
+{% load staticfiles %}
+{% block link %}
+  <link rel="stylesheet" href="{% static "Beginner/css/introduction.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/base2.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
+  <script type="text/javascript" src="{% static 'Falcon/js/base.js' %}"></script>
+
+{% endblock %}
+
+{% block beginner %}
+      <h2>Introduction To Python</h2>
+      <p>
+          Python is a dynamic, interpreted (bytecode-compiled) language. There are no type declarations of
+          variables, parameters, functions, or methods in source code. This makes the code short and flexible,
+          and you lose the compile-time type checking of the source code. Python tracks the types of all values
+          at runtime and flags code that does not make sense as it runs.
+      </p>
+      <p>
+          An excellent way to see how Python code works is to run the Python interpreter and type code right into it.
+          If you ever have a question like, "What happens if I add an int to a list?" Just typing it into the python
+          interpreter is a fast and likely the best way to see what happens. (See below to see what really happens!)
+      </p>
+      <pre>
+$ python       <span> ## Run the Python interpreter</span>
+<span class="purple">Python</span> 3.7.0 (default, Aug 20 2018, 03:41:42)
+[GCC 7.3.0] on linux
+<span class="purple">Type</span> "help", "copyright", "credits" or "license" for more information.
+>>> a = 6       <span>## set a variable in this interpreter session</span>
+>>> a           <span>## entering an expression prints its value</span>
+6
+>>> a + 2
+8
+>>> a = 'hi'    <span>## 'a' can hold a string just as well</span>
+>>> a
+'hi'
+>>> len(a)      <span>## call the len() function on a string</span>
+2
+>>> a + len(a)  <span>## try something that doesn't work</span>
+<span class="purple">Traceback</span> (most recent call last):
+  <span class="purple">File</span> "", line 1, in
+<span class="purple">TypeError</span>: cannot concatenate 'str' and 'int' objects
+>>> a + str(len(a))  <span>## probably what you really wanted</span>
+'hi2'
+>>> foo         <span>## try something else that doesn't work</span>
+<span class="purple">Traceback</span> (most recent call last):
+  <span class="purple">File</span> "", line 1, in
+<span class="purple">NameError</span>: name 'foo' is not defined
+>>> ^D          <span>## type CTRL-c to exit (CTRL-z in Windows/DOS terminal)</span>
+    </pre>
+    <p>
+      As you can see above, it's easy to experiment with variables and operators.
+       Also, the interpreter throws, or "raises" in Python parlance, a runtime error
+       if the code tries to read a variable that has not been assigned a value. Like C++ and Java,
+       Python is case sensitive so "a" and "A" are different variables. The end of a line marks the
+        end of a statement, so unlike C++ and Java, Python does not require a semicolon at the end of
+         each statement. Comments begin with a '#' and extend to the end of the line.
+    </p>
+    <h2>Python Source code</h2>
+    <p>Python source files use the ".py" extension and are called "modules." With a Python module hello.py,
+      the easiest way to run it is with the shell command "python hello.py" which calls the Python interpreter
+      to execute the code in hello.py. See the official docs page on all
+      the different options you have when running Python from the command-line.<br><br>
+
+     Here's a very simple hello.py program (notice that blocks of code are delimited strictly using indentation rather than
+curly braces — more on this later!):</p>
+  <pre>
+<span>#!/usr/bin/env python</span>
+
+<span># Gather our code in a main() function</span>
+def main():
+   print 'Hello World!'
+
+<span># Standard boilerplate to call the main() function to begin the program.</span>
+if __name__ == '__main__':
+   main()
+
+  </pre>
+  <h4>Running this program from the command line looks like:</h4>
+  <pre>
+$ python hello.py
+Hello World!
+  </pre>
+  <br>
+  <br>
+  <a href="{% url 'Beginner:environment_setup' %}">
+    <input type="button" class="btn btn-primary" value="Next Topic"></a><br><br>
+{% endblock %}

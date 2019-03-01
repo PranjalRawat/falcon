@@ -1,0 +1,76 @@
+{% extends 'Falcon/base.html' %}
+{% load staticfiles %}
+{% block link %}
+    <link rel="stylesheet" href="{% static "Falcon/css/base2.css" %}"/>
+    <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
+    <script type="text/javascript" src="{% static 'Falcon/js/base.js' %}"></script>
+
+{% endblock %}
+
+{% block base2 %}
+    <div class="sidebar sidenav"  id="mySidenav">
+      <span class="openbtn" onclick='toggleRightMenu()'><i class="fa fa-bars"></i></span>
+
+      <h2 id="beginner">Beginner Topics</h2>
+      <ul>
+        <li> <a href="{% url 'Beginner:introduction' %}">Python - Introduction</a> </li>
+        <li> <a href="{% url 'Beginner:environment_setup' %}">Python - Environment Setup</a> </li>
+        <li> <a href="{% url 'Beginner:hello_world' %}">Python - Hello World</a> </li>
+        <li> <a href="{% url 'Beginner:varibles' %}">Python - Varibles</a> </li>
+        <li> <a href="{% url 'Beginner:numeric' %}">Python - Numeric</a> </li>
+        <li> <a href="{% url 'Beginner:casting' %}">Python - Casting</a> </li>
+        <li> <a href="{% url 'Beginner:string' %}">Python - String</a> </li>
+        <li> <a href="{% url 'Beginner:operators' %}">Python - Operators</a> </li>
+        <li> <a href="{% url 'Beginner:input_and_output' %}">Python - Input & Output</a> </li>
+        <li> <a href="{% url 'Beginner:decision_making' %}">Python - Decision Making</a> </li>
+        <li> <a href="{% url 'Beginner:list' %}">Python - List</a> </li>
+        <li> <a href="{% url 'Beginner:dictionary' %}">Python - Dictionary</a> </li>
+        <li> <a href="{% url 'Beginner:tuple' %}">Python - Tuple</a> </li>
+        <li> <a href="{% url 'Beginner:sets' %}">Python - Sets</a> </li>
+        <li> <a href="{% url 'Beginner:conditions' %}">Python - Conditions</a> </li>
+        <li> <a href="{% url 'Beginner:while_loop' %}">Python - While Loop</a> </li>
+        <li> <a href="{% url 'Beginner:for_loop' %}">Python - For Loop</a> </li>
+        <li> <a href="{% url 'Beginner:function' %}">Python - Function</a> </li>
+        <li> <a href="{% url 'Beginner:lambda_' %}">Python - Lambda</a> </li>
+        <li> <a href="{% url 'Beginner:date_and_time' %}">Python - Date & Time</a> </li>
+      </ul>
+      <h2 id="moderate">Moderate Topics</h2>
+      <ul>
+        <li> <a href="{% url 'Moderate:modules' %}">Python - Modules</a> </li>
+        <li> <a href="{% url 'Moderate:files_i_o' %}">Python - Files I/O</a> </li>
+        <li> <a href="{% url 'Moderate:exceptions' %}">Python - Exceptions</a> </li>
+        <li> <a href="{% url 'Moderate:exception_handling' %}">Python - Exception Handling</a> </li>
+        <li> <a href="{% url 'Moderate:user_exceptions' %}">Python - User Exceptions</a> </li>
+        <li> <a href="{% url 'Moderate:classes_and_objects' %}">Python - Classes/Objects</a> </li>
+        <li> <a href="{% url 'Moderate:inheritance' %}">Python - Inheritance</a> </li>
+        <li> <a href="{% url 'Moderate:overloading' %}">Python - Overloading</a> </li>
+        <li> <a href="{% url 'Moderate:reg_expressions' %}">Python - Reg Expressions</a> </li>
+        <li> <a href="{% url 'Moderate:iterator' %}">Python - Iterator</a> </li>
+      </ul>
+      <h2 id="advanced">Advanced Topics</h2>
+      <ul>
+        <li> <a href="{% url 'Advanced:system_programming' %}">System Programming</a> </li>
+        <li> <a href="{% url 'Advanced:graph_theory' %}">Python - Graph Theory</a> </li>
+        <li> <a href="{% url 'Advanced:polynomial_manipulation' %}">Polynomial manipulation</a> </li>
+        <li> <a href="{% url 'Advanced:linguistics' %}">Python - Linguistics</a> </li>
+        <li> <a href="{% url 'Advanced:numerical_computations' %}">Numerical Computations</a> </li>
+        <li> <a href="{% url 'Advanced:creating_musical_scores' %}">Creating Musical Scores</a> </li>
+        <li> <a href="{% url 'Advanced:databases' %}">Python - Databases</a> </li>
+        <li> <a href="{% url 'Advanced:generator_protocol' %}">Python - Generator Protocol</a> </li>
+        <li> <a href="{% url 'Advanced:iterator_protocol' %}">Python - Iterator Protocol</a> </li>
+        <li> <a href="{% url 'Advanced:meta_programming' %}">Python - Meta-programming</a> </li>
+        <li> <a href="{% url 'Advanced:wsgi_protocol' %}">Python - WSGI protocol</a> </li>
+        <li> <a href="{% url 'Advanced:context_managers' %}">Python - Context Managers</a> </li>
+        <li> <a href="{% url 'Advanced:design_patterns' %}">Python - Design Patterns</a> </li>
+        <br><br>
+      </ul>
+    </div>
+
+    <div class="other_section" id="main">
+      <span class="openbtn" id="magic_btn" onclick='toggleRightMenu()'><i class="fa fa-bars"></i></span><br><br>
+
+      {% block beginner %}
+
+      {% endblock %}
+    </div>
+{% endblock %}

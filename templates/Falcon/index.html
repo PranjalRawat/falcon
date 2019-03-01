@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+{% extends 'Falcon/base.html' %}
+{% load staticfiles %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static "Falcon/css/index.css" %}"/>
+    <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
+
+{% endblock %}
+
+{% block index %}
+  <div class="index">
+    <div class="content">
+      <h2> <span style="color:#93b3c4 ">Fal</span><span style="color:#c6c247">con</span> </h2>
+      <h3><em>-----</em>- A Python Cook Book -<em>-----</em></h3><br><br><br>
+      <p>Here we will help you to learn and understand and code using Python language.</p><br><br><br>
+
+    </div>
+    <div class=" python">
+      <h2>Python Programming Language</h2>
+      <p>Python is an interpreted high-level programming language for general-purpose programming.
+        Created by Guido van Rossum and first released in 1991, Python has a design philosophy that
+        emphasizes code readability, notably using significant whitespace. It provides constructs that
+        enable clear programming on both small and large scales. In July 2018, Van Rossum stepped
+        down as the leader in the language community after 30 years. To know more about python visit :
+        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" style="color:violet">
+        https://en.wikipedia.org/wiki/Python</a>
+     </p>
+    </div>
+    <div class="dwnld_install">
+      <h2>Download And Installation</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Download the latest source release<br>
+            <a href="https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz">
+              <input type="button" class="btn btn-primary" value="Download Python 3.7.0"></a><br>
+              Looking for Python with a different OS? Python for <a href="https://www.python.org/downloads/windows/">Windows</a> ,
+              <a href="https://www.python.org/downloads/source/">Linux/UNIX</a> ,
+              <a href="https://www.python.org/downloads/mac-osx/">Mac OS X</a>,
+              <a href="https://www.python.org/download/other/">Other</a>.<br>
+               Want to help test development versions of Python?<a href="https://www.python.org/download/pre-releases/">Pre-releases</a>
+                Looking for Python 2.7? See below for specific releases
+          </p>
+        </div>
+        <div class="col-md-6 python_logo">
+          <img src="{% static "Falcon/images/python_logo.jpeg" %}" alt="">
+        </div>
+      </div>
+
+    </div>
+    <div class="python_features">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Why To Use Python ?</h2>
+          <ul>
+            <li>Highly readable language</li>
+            <li>Clean visual layout</li>
+            <li>Less syntactic exceptions</li>
+            <li>Superior string manipulation</li>
+            <li>Elegant and dynamic typing</li>
+            <li>Interpreted nature</li>
+            <li>Ideal for scripting and rapid application</li>
+            <li>Fit for many platforms</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2>Where Python is Used ?</h2>
+          <ul>
+            <li>Web and Internet Development</li>
+            <li>Scientific and Numeric</li>
+            <li>Machine Learning</li>
+            <li>Education</li>
+            <li>Desktop GUIs</li>
+            <li>Software Development</li>
+            <li>Business Applications</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="python_companies">
+      <h2>Who All Are Using Python ?</h2>
+      <img src="{% static "Falcon/images/python_companies.jpg" %}" alt="">
+    </div>
+    <div class="social">
+      <ul>
+         <li><a href="https://www.github.com/PranjalRawat"><i class="fa fa-github"></i></a></li>
+         <li><a href="https://www.twitter.com/pranjalrawat78"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://plus.google.com/104592630041634047373"><i class="fa fa-google-plus"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/pranjal-rawat-2462b8149"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://www.instagram.com/pranjalrawat_174"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="https://www.hackerrank.com/pranjalrawat"><i class="fab fa-hackerrank"></i></a></li>
+      </ul>
+      <h5>Developed BY - Pranjal Rawat</h5>
+    </div>
+  </div>
+{% endblock %}
