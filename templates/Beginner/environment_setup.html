@@ -1,0 +1,96 @@
+{% extends 'Falcon/base2.html' %}
+{% load staticfiles %}
+{% block link %}
+  <link rel="stylesheet" href="{% static "Beginner/css/environment_setup.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/base2.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
+  <script type="text/javascript" src="{% static 'Falcon/js/base.js' %}"></script>
+
+{% endblock %}
+
+{% block beginner %}
+
+  <h2>Local Environment Setup</h2>
+
+  <p>Open a terminal window and type "python" to find out if it is already installed and which version is installed.</p>
+    <h3>Getting Python</h3><br>
+    <h4>Windows platform</h4>
+
+    <h5>The following different installation options are available.</h5>
+    <p>
+        Windows x86-64 embeddable zip file<br>
+        Windows x86-64 executable installer<br>
+        Windows x86-64 web-based installer<br>
+        Windows x86 embeddable zip file<br>
+        Windows x86 executable installer<br>
+        Windows x86 web-based installer
+    </p>
+    <h4>Linux platform</h4>
+
+    <h5>Different flavors of Linux use different package managers for installation of new packages.</h5>
+
+    <p>On Ubuntu Linux, Python 3 is installed using the following command from the terminal.</p>
+
+    $<span class="purple">sudo apt-get install python3</span>
+
+    <h4>Mac OS</h4>
+
+    <h5>Download Mac OS installers from this URL −<a href="https://www.python.org/downloads/mac-osx/">
+      https://www.python.org/downloads/mac-osx/</a></h5>
+    <span class="purple">
+        Mac OS X 64-bit/32-bit installer − python-3.7.0-macosx10.6.pkg<br>
+        Mac OS X 32-bit i386/PPC installer − python-3.7.0-macosx10.5.pkg
+    </span>
+    <p>Double click this package file and follow the wizard instructions to install. The most
+      up-to-date and current source code, binaries, documentation, news, etc., is available on
+      the official website of Python −Python Official Website − <a href="https://www.python.org/">https://www.python.org/</a><br>
+      You can download Python documentation from the following site. The documentation is available in HTML, PDF and PostScript formats.
+    </p>
+    <h4>Python Documentation Website − <a href="www.python.org/doc/">www.python.org/doc/</a></h4>
+    <h3>Setting up PATH</h3>
+    <p>
+    Programs and other executable files can be in many directories. Hence, the operating systems provide a search path that lists
+    the directories that it searches for executables.
+    </p>
+    <h5>The important features are −</h5>
+    <p>
+        The path is stored in an environment variable, which is a named string maintained by the operating system. This variable
+        contains information available to the command shell and other programs.
+        <br>
+        The path variable is named as PATH in Unix or Path in Windows (Unix is case-sensitive; Windows is not).
+        <br>
+        In Mac OS, the installer handles the path details. To invoke the Python interpreter from any particular directory, you
+        must add the Python directory to your path.
+    </p>
+    <h4>Setting Path at Unix/Linux</h4>
+
+    <h5>To add the Python directory to the path for a particular session in Unix −</h5>
+     <p>
+        In the csh shell − type setenv PATH "<span class="purple">$PATH:/usr/local/bin/python3</span>" and press Enter.
+        <br>
+        In the bash shell (Linux) − type export PYTHONPATH=<span class="purple">/usr/local/bin/python3.7</span> and press Enter.
+        <br>
+        In the sh or ksh shell − type PATH = "<span class="purple">$PATH:/usr/local/bin/python3</span>" and press Enter.
+     </p>
+    Note − <span class="purple">/usr/local/bin/python3</span> is the path of the Python directory.
+    Setting Path at Windows
+    <h5>To add the Python directory to the path for a particular session in Windows −</h5>
+        At the command prompt − type path <span class="purple">%path%;C:\Python</span> and press Enter.
+        <br>
+    Note − <span class="purple">C:\Python</span> is the path of the Python directory
+    <p>You can start Python from Unix, DOS, or any other system that provides you a command-line interpreter or shell window.</p>
+    <h5>Enter python the command line.</h5>
+
+  <pre>
+  $<span class="purple">python</span>             <span class="comment"># Unix/Linux</span>
+  or
+  <span class="purple">python% </span>            <span class="comment"># Unix/Linux</span>
+  or
+  C:><span class="purple">python</span>           <span class="comment"># Window/Dos</span>
+  </pre>
+  <br>
+  <br>
+  <a href="{% url 'Beginner:hello_world' %}">
+    <input type="button" class="btn btn-primary" value="Next Topic"></a><br><br>
+
+{% endblock %}

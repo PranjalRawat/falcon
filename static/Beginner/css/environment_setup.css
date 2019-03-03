@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+
+h2{
+  font-size:30px;
+}
+h3{
+  font-size:25px;
+}
+h4{
+  font-size:22px;
+  color:#141414;
+}
+h5{
+  font-size:20px;
+}
+h6{
+  font-size:18px;
+}
+.purple{
+  color:#9c27b0;
+}
+.comment{
+  color:#d81b60 !important;
+}
+pre{
+  background-color: #141414;
+  color:white;
+}

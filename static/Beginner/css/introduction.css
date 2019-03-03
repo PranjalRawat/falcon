@@ -1,0 +1,12 @@
+{% load staticfiles %}
+
+pre span{
+  color:#d81b60;
+}
+.purple{
+  color:#9c27b0;
+}
+pre{
+  background-color: #141414;
+  color:#fff;
+}

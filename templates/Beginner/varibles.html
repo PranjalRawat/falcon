@@ -1,0 +1,40 @@
+{% extends 'Falcon/base2.html' %}
+{% load staticfiles %}
+{% block link %}
+  <link rel="stylesheet" href="{% static "Beginner/css/varibles.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/base2.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
+  <script type="text/javascript" src="{% static 'Falcon/js/base.js' %}"></script>
+
+{% endblock %}
+
+{% block beginner %}
+  <h2>Varibles</h2>
+  <p>Python is completely object oriented, and not "statically typed". You do not need
+    to declare variables before using them, or declare their type. Every variable in Python is an object.
+    <br>
+    This tutorial will go over a few basic types of variables.
+  </p>
+  <h3>Numbers</h3>
+    <p> Python supports two types of numbers - integers and floating point numbers.
+      (It also supports complex numbers, which will not be explained in this tutorial).
+      <br>
+      To define an integer, use the following syntax:
+    </p>
+
+
+
+  <h3>Strings</h3>
+  <p>Strings are defined either with a single quote or a double quotes.
+    <br>
+    The difference between the two is that using double quotes makes it easy to include apostrophes
+    (whereas these would terminate the string if using single quotes).
+  </p>
+
+
+<br>
+<br>
+<a href="{% url 'Beginner:numeric' %}">
+  <input type="button" class="btn btn-primary" value="Next Topic"></a><br><br>
+
+{% endblock %}

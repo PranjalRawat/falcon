@@ -1,0 +1,122 @@
+
+.bg{
+  background: url("/static/Falcon/images/background.jpg") 50% no-repeat ;
+  -webkit-background-size:cover !important;
+  position:relative;
+  max-height:640px;
+  background-size: cover;
+
+}
+.index{
+  margin: 0px !important;
+  padding: 0px !important;
+  background-size: cover;
+
+}
+.row{
+  margin:0;
+  padding:0;
+}
+.content h2{
+  font-family: monospace;
+  margin-top:10%;
+  text-align: center;
+  font-size:150px;
+}
+.content h3{
+  text-align: center;
+  font-size:50px;
+}
+.content p{
+  text-align:center;
+  font-size:30px;
+}
+.python{
+  background-color: #465e84 !important;
+  padding:50px;
+  margin-right:-10px;
+  margin-left:-10px;
+}
+.python h2{
+  color:#c2d45f;
+  text-align:center;
+  font-size: 50px;
+}
+.python p{
+  padding-top:30px;
+  font-size:20px;
+  color:#fff;
+}
+.dwnld_install{
+  background-color: #fff;
+  padding:20px;
+  margin-right:-10px;
+  margin-left:-10px;
+}
+.dwnld_install h2{
+  color:#000;
+  text-align:center;
+  font-size: 50px;
+}
+.dwnld_install p{
+  padding-top:30px;
+  padding-left:30px;
+  line-height: 40px;
+  font-size:20px;
+  color:#000;
+}
+.python_logo img{
+  height:50vh;
+  margin-left:80px;
+}
+.python_features{
+  background-color:#465e84 ;
+  padding:20px;
+  margin-left:-10px;
+  margin-right:-10px;
+}
+.python_features h2{
+  color:#fff;
+  text-align:center;
+  font-size:40px;
+}
+.python_features li{
+  text-decoration: none;
+  font-size:20px;
+  list-style-type: none;
+  padding-left:100px;
+}
+.python_companies{
+  margin-top:0px;
+  margin-bottom: 0px;
+  background-color: #fff;
+  margin-left:-10px;
+  margin-right:-10px;
+}
+.python_companies h2{
+  text-align: center;
+  font-size:50px;
+}
+.python_companies img{
+  padding-top:30px;
+  width:100%;
+  height:400px;
+}
+.social {
+   background-color:#141414;
+   padding: 20px 0px;
+   margin:10px -10px 0px -10px;
+   font-size: 30px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+   text-align: center;
+   border-top-left-radius:50%;
+   border-top-right-radius:50%;
+
+}
+.social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+.social li a { color: #fff; }
+.social li a:hover { color: #11ABB0; }

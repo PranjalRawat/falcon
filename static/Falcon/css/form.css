@@ -1,0 +1,19 @@
+.form_f{
+  text-align: center;
+  margin-top:1%;
+  margin:5% 30% 5% 30%;
+  padding:1% 5% 1% 5%;
+
+}
+.f_form{
+  text-align: left;
+  padding:2%;
+}
+.bgs{
+  background: url("/static/Falcon/images/background.jpg") 50% no-repeat ;
+  -webkit-background-size:cover !important;
+  position:relative;
+  height:450px;
+  background-size: cover;
+
+}
