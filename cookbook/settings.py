@@ -15,7 +15,10 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+<<<<<<< HEAD
 STATIC_DIR = os.path.join(BASE_DIR,"static")
+=======
+>>>>>>> e2eab90965e732d626657329bf5e3e2a9062713d
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,7 +28,11 @@ STATIC_DIR = os.path.join(BASE_DIR,"static")
 SECRET_KEY = '0v_$ancs0m8dzsc%(@q%%j37j_)9c0j$%4*(#xv+n!4o+f_d1l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+<<<<<<< HEAD
 DEBUG = True
+=======
+DEBUG = False
+>>>>>>> e2eab90965e732d626657329bf5e3e2a9062713d
 
 ALLOWED_HOSTS = ['127.0.0.1', 'pranjalrawat.herokuapp.com']
 
@@ -45,6 +52,10 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+<<<<<<< HEAD
+=======
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+>>>>>>> e2eab90965e732d626657329bf5e3e2a9062713d
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -124,11 +135,25 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+<<<<<<< HEAD
 
+=======
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+>>>>>>> e2eab90965e732d626657329bf5e3e2a9062713d
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
 
+<<<<<<< HEAD
 LOGIN_REDIRECT_URL = 'test'
 LOGOUT_REDIRECT_URL = 'thank'
+=======
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+LOGIN_REDIRECT_URL = 'test'
+LOGOUT_REDIRECT_URL = 'thank'
+
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+>>>>>>> e2eab90965e732d626657329bf5e3e2a9062713d
