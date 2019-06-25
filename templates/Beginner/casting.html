@@ -1,0 +1,38 @@
+{% extends 'Falcon/base2.html' %}
+{% load staticfiles %}
+{% block link %}
+  <link rel="stylesheet" href="{% static "Beginner/css/casting.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/base2.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
+  <script type="text/javascript" src="{% static 'Falcon/js/base.js' %}"></script>
+
+{% endblock %}
+
+{% block beginner %}
+<a href="{% url 'Beginner:string' %}">
+    <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
+
+  <h2>Casting</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<br>
+<br>
+<a href="{% url 'Beginner:numeric' %}">
+    <input type="button" class="btn btn-primary previous" value="Pervious Topic"></a>
+  <a href="{% url 'Beginner:string' %}">
+    <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
+
+{% endblock %}
