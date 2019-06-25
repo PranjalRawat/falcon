@@ -9,6 +9,8 @@
 {% endblock %}
 
 {% block beginner %}
+<a href="{% url 'Beginner:varibles' %}">
+  <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
   <h2>Hello World!</h2>
   <p>Python is a very simple language, and has a very straightforward syntax. It encourages
     programmers to program without boilerplate (prepared) code. The simplest directive in Python
@@ -24,8 +26,13 @@
     is a function, and must be invoked with parentheses.
   </p>
     <h3>To print a string in <span class="purple">Python 3</span>, just write:</h3>
-<iframe src="https://paiza.io/projects/e/ibc5wo-FUglQXt2Gv0YVKw?theme=twilight" width="100%" height="500" scrolling="no" seamless="seamless"></iframe>    <br>
-    <a href="{% url 'Beginner:varibles' %}">
-      <input type="button" class="btn btn-primary" value="Next Topic"></a><br><br>
+    <iframe src="https://paiza.io/projects/e/kRQ4yiOPcslDm6knKilknw?theme=github" width="100%" height="500" scrolling="no" seamless="seamless"></iframe>    <br>
+    
+
+  
+  <a href="{% url 'Beginner:environment_setup' %}">
+    <input type="button" class="btn btn-primary previous" value="Pervious Topic"></a>
+  <a href="{% url 'Beginner:varibles' %}">
+    <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
 
 {% endblock %}

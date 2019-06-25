@@ -4,9 +4,11 @@
   background: url("/static/Falcon/images/nav.png") 50% no-repeat ;
   padding:15px;
   position:relative;
+  border:0;
   margin:0px 0px 0px 0px;
-  border-bottom: 5px solid #141414;
+  border-bottom: 2px solid #141414;
   background-size: cover;
+  border-radius: 0px;
 }
 body{
   overflow: hidden !important;
@@ -26,13 +28,14 @@ body{
   width:321px;
   margin:0;
   background-color: #465e84 !important;
-  border-right:10px solid #141414;
+  border-right:2px solid #141414;
   text-align: left;
-  height:86vh;
+  height:87vh;
 
 }
 .sidebar button{
   background-color: #465e84 !important;
+
 }
 .sidebar button i{
   padding-left: 20px;
@@ -81,14 +84,15 @@ body{
 .openbtn{
   position: relative !important;
   float:right !important;
+  cursor:pointer;
 }
 .openbtn i{
   font-size:20px;
   padding:10px;
 }
 .other_section{
-  height:80vh;
-  padding:10px;
+  height:87vh;
+  padding:5px;
   overflow-y: auto;
 }
 #magic_btn{
@@ -97,8 +101,16 @@ body{
   float: left !important;
 }
 #main{
-  margin-left: 321px;
+  margin-left: 322px;
   transition: margin-left .5s;
   padding-left: 20px;
 
+}
+.next{
+  float:right;
+  margin-top:40px;
+}
+.previous{
+  margin-top:40px;
+  float:left;
 }

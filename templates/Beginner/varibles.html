@@ -1,7 +1,7 @@
 {% extends 'Falcon/base2.html' %}
 {% load staticfiles %}
 {% block link %}
-  <link rel="stylesheet" href="{% static "Beginner/css/varibles.css" %}"/>
+  <link rel="stylesheet" href="{% static "Beginner/css/variables.css" %}"/>
   <link rel="stylesheet" href="{% static "Falcon/css/base2.css" %}"/>
   <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
   <script type="text/javascript" src="{% static 'Falcon/js/base.js' %}"></script>
@@ -20,8 +20,12 @@
       (It also supports complex numbers, which will not be explained in this tutorial).
       <br>
       To define an integer, use the following syntax:
+      
     </p>
-
+    <pre>
+  <span># declaring integer with name var </span>
+  var = 23
+    </pre>
 
 
   <h3>Strings</h3>
@@ -31,7 +35,20 @@
     (whereas these would terminate the string if using single quotes).
   </p>
 
+     <pre>
+  <span># declaring string with name str </span>
+  str = 'I am a string'
+     </pre>
 
+
+  <h3>Variable Naming Convention</h3>
+  <p>A variable can have a short name (like x and y) or a more descriptive name (age, name, cost_of_car).<br> Rules for Python variables: </p>
+  <ul>
+    <li>A variable name must start with a letter or the underscore character</li>
+    <li>A variable name cannot start with a number</li>
+    <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+    <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+  </ul>
 <br>
 <br>
 <a href="{% url 'Beginner:numeric' %}">

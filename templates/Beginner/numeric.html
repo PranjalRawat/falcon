@@ -1,0 +1,62 @@
+{% extends 'Falcon/base2.html' %}
+{% load staticfiles %}
+{% block link %}
+  <link rel="stylesheet" href="{% static "Beginner/css/numeric.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/base2.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
+  <script type="text/javascript" src="{% static 'Falcon/js/base.js' %}"></script>
+
+{% endblock %}
+
+{% block beginner %}
+<a href="{% url 'Beginner:varibles' %}">
+    <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
+
+  <h2>Numerics</h2>
+  <p>Number data types store numeric values. They are immutable data types, means that changing the value of a number data type results in a newly allocated object.<br><br>
+    There are four numeric types in Python:</p>
+  <ul>
+      <li>int</li>
+      <li>long</li>
+      <li>float</li>
+      <li>complex</li>
+  </ul>
+  Number objects are created when you assign a value to them. For example −
+  <iframe src="https://paiza.io/projects/e/1aS9XVmWZhPB4yhEDP8fyA?theme=github" width="100%" height="500" scrolling="no" seamless="seamless"></iframe>
+
+
+  <h3>1. Integer</h3>
+    <p>They are often called just integers or ints, are positive or negative whole numbers with no decimal point. Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</p>
+
+  <h3>2. Long</h3>
+    <p>Also called longs, they are integers of unlimited size, written like integers and followed by an uppercase or lowercase L. <em>Long type is no longer supported in python version 3.</em></p>
+
+  <h3>3. Float</h3>
+    <p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals. They represent real numbers and are written with a decimal point dividing the integer and fractional parts. Floats may also be in scientific notation, with E or e indicating the power of 10 (2.5e2 = 2.5 x 102 = 250).</p>
+
+  <h3>4. Complex</h3>
+    <p>Complex are of the form a + bJ, where a and b are floats and J (or j) represents the square root of -1 (which is an imaginary number). The real part of the number is a, and the imaginary part is b. Complex numbers are not used much in Python programming. Complex numbers are written with a "j" as the imaginary part:</p>
+
+
+<br>
+<br>
+<iframe src="https://paiza.io/projects/e/wMWvheFRhHDffbb0ZR5P9w?theme=github" width="100%" height="500" scrolling="no" seamless="seamless"></iframe>
+
+<h2>Numberic Type Conversion</h2>
+<p>Python converts numbers internally in an expression containing mixed types to a common type for evaluation. But sometimes, you need to coerce a number explicitly from one type to another to satisfy the requirements of an operator or function parameter.</p>
+<ul>
+    <li>int(X) to convert to simple integer</li>
+    <li>float(X) to convert to floating number</li>
+    <li>complex(X) to convert to complex number</li>
+</ul>
+
+<iframe src="https://paiza.io/projects/e/0OrSqjsXXeBbryfNdXrWcg?theme=github" width="98%" height="500" scrolling="no" seamless="seamless"></iframe>
+  
+<br>
+<br>
+<a href="{% url 'Beginner:varibles' %}">
+    <input type="button" class="btn btn-primary previous" value="Pervious Topic"></a>
+  <a href="{% url 'Beginner:casting' %}">
+    <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
+
+{% endblock %}

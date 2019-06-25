@@ -1,0 +1,9 @@
+{% load staticfiles %}
+
+pre span{
+  color:#d81b60;
+}
+pre{
+  background-color: #141414;
+  color:#fff;
+}

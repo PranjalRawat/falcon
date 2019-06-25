@@ -10,6 +10,7 @@ function toggleRightMenu() {
       document.getElementById('mySidenav').style.width = '0px';
       document.getElementById('magic_btn').style.display = 'block';
       document.getElementById("main").style.marginLeft = "0px";
+      document.getElementById("mySidenav").style.borderRight = "0px";
 
 
     }

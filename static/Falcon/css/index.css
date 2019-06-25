@@ -69,6 +69,25 @@
   height:50vh;
   margin-left:80px;
 }
+.dwnld_detail{
+  padding-top:40px;
+}
+.dwnld_detail h3{
+  border-top: 4px solid #75a8d3;
+  padding-top:20px;
+}
+.dwnld_detail p{
+  font-size:15px;
+  color:#777;
+  line-height: .7cm;
+}
+.highlight a{
+  color:#3e80b9;
+  text-decoration: none;
+}
+.highlight a:hover{
+  color:#072b4b;
+}
 .python_features{
   background-color:#465e84 ;
   padding:20px;
@@ -80,11 +99,18 @@
   text-align:center;
   font-size:40px;
 }
+.python_features ul{
+  padding:0;
+  margin:0;
+}
 .python_features li{
   text-decoration: none;
   font-size:20px;
+  color:#000;
+  text-align:center;
   list-style-type: none;
-  padding-left:100px;
+  line-height: 1cm;
+
 }
 .python_companies{
   margin-top:0px;
