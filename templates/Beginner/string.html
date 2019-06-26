@@ -1,0 +1,50 @@
+{% extends 'Falcon/base2.html' %}
+{% load staticfiles %}
+{% block link %}
+  <link rel="stylesheet" href="{% static "Beginner/css/string.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/base2.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
+  <script type="text/javascript" src="{% static 'Falcon/js/base.js' %}"></script>
+
+{% endblock %}
+
+{% block beginner %}
+<a href="{% url 'Beginner:operators' %}">
+  <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
+
+  <h2>String</h2>
+    <p>String is sequence of Unicode characters. We can use single quotes or double quotes to represent strings. Multi-line strings can be denoted using triple quotes, ''' or """. String literals in python are surrounded by either single quotation marks, or double quotation marks.</p>
+  
+    <iframe src="https://paiza.io/projects/e/O2-QUIJEcIfNflIHRRmwTQ?theme=github" width="98%" height="500" scrolling="no" seamless="seamless"></iframe>
+
+  <h3>Functions used wth string</h3>
+  <ul>
+      <li>The strip() method removes any whitespace from the beginning or the end:</li>
+      <li>The len() method returns the length of a string:</li>
+      <li>The lower() method returns the string in lower case:</li>
+      <li>The upper() method returns the string in upper case:</li>
+      <li>The replace() method replaces a string with another string:</li>
+      <li>The split() method splits the string into substrings if it finds instances of the separator:</li>
+  </ul>
+
+  <iframe src="https://paiza.io/projects/e/_EAxXzuJH8O1mRAWiLSGXg?theme=github" width="98%" height="500" scrolling="no" seamless="seamless"></iframe>
+
+
+  <h2>String Format</h2>
+
+<p>As we learned in the Python Variables chapter, we cannot combine strings and numbers by adding them:</p>
+<p>But we can combine strings and numbers by using the format() method!
+
+    The format() method takes the passed arguments, formats them, and places them in the string where the placeholders {} are:</p>
+
+<p>The format() method takes unlimited number of arguments, and are placed into the respective placeholders:</p>
+
+
+<iframe src="https://paiza.io/projects/e/uBDTc8044A8qLTdjJOzmuQ?theme=github" width="98%" height="500" scrolling="no" seamless="seamless"></iframe>
+
+  <a href="{% url 'Beginner:casting' %}">
+    <input type="button" class="btn btn-primary previous" value="Pervious Topic"></a>
+  <a href="{% url 'Beginner:operators' %}">
+    <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
+
+{% endblock %}
