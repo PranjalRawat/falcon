@@ -1,0 +1,143 @@
+{% extends 'Falcon/base2.html' %}
+{% load staticfiles %}
+{% block link %}
+  <link rel="stylesheet" href="{% static "Beginner/css/operators.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/base2.css" %}"/>
+  <link rel="stylesheet" href="{% static "Falcon/css/media-queries.css" %}">
+  <script type="text/javascript" src="{% static 'Falcon/js/base.js' %}"></script>
+
+{% endblock %}
+
+{% block beginner %}
+<a href="{% url 'Beginner:input_and_output' %}">
+  <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
+  <h2>Operators</h2>
+
+
+    <p>Operators are special symbols in Python that carry out arithmetic or logical computation. The value that the operator operates on is called the operand. Operators are the constructs, which can manipulate the value of operands. Consider the expression 4 + 5 = 9. Here, 4 and 5 are called the operands and + is called the operator.</p>
+
+
+    <h2>Types of Operator</h2>
+    Python language supports the following types of operators −
+    <ul type="square">
+        <li>Arithmetic Operators</li>
+        <li>Comparison (Relational) Operators</li>
+        <li>Assignment Operators</li>
+        <li>Logical Operators</li>
+        <li>Bitwise Operators</li>
+        <li>Membership Operators</li>
+        <li>Identity Operators</li>
+    </ul>
+
+
+    <h3>Arithmetic operators</h3>
+    <p>Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication etc. Arithmetic operators are used with numeric values to perform common mathematical operations:</p>
+
+    <table border="1">
+        <caption>Arithmetic operators in Python</caption>
+        <tbody>
+            <tr>
+                <th>Operator</th>
+                <th>Meaning</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Add two operands or unary plus</td>
+                <td>x + y<br>
+                    +2</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Subtract right operand from the left or unary minus</td>
+                <td>x - y<br>
+                    -2</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Multiply two operands</td>
+                <td>x * y</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Divide left operand by the right one (always results into float)</td>
+                <td>x / y</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulus - remainder of the division of left operand by the right</td>
+                <td>x % y (remainder of x/y)</td>
+            </tr>
+            <tr>
+                <td>//</td>
+                <td>Floor division - division that results into whole number adjusted to the left in the number line</td>
+                <td>x // y</td>
+            </tr>
+            <tr>
+                <td>**</td>
+                <td>Exponent - left operand raised to the power of right</td>
+                <td>x**y (x to the power y)</td>
+            </tr>
+        </tbody>
+    </table>
+    <iframe src="https://paiza.io/projects/e/Is5K5ooXmcr9QmVfEGdKlA?theme=github" width="98%" height="500" scrolling="no" seamless="seamless"></iframe>
+
+
+    <h3>Comparison (Relational) Operators</h3>
+    <p>Comparison operators are used to compare values. It either returns True or False according to the condition.</p>
+
+    <table border='1'>
+        <tbody>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+                <th>Syntax</th>
+            </tr>
+            <tr>
+                <td>&gt;</td>
+                <td>Greater than:  True if left operand is greater than the right</td>
+                <td>x &gt; y</td>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>Less than:  True if left operand is less than the right</td>
+                <td>x &lt; y</td>
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>Equal to: True if both operands are equal</td>
+                <td>x == y</td>
+            </tr>
+            <tr>
+                <td>!=</td>
+                <td>Not equal to - True if operands are not equal</td>
+                <td>x != y</td>
+            </tr>
+            <tr>
+                <td>&gt;=</td>
+                <td>Greater than or equal to:  True if left operand is greater than or equal to the right</td>
+                <td>x &gt;= y</td>
+            </tr>
+            <tr>
+                <td>&lt;=</td>
+                <td>Less than or equal to:  True if left operand is less than or equal to the right</td>
+                <td>x &lt;= y</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+        <iframe src="https://paiza.io/projects/e/xCKQlcFu9zezi_VIviuMYw?theme=github" width="98%" height="500" scrolling="no" seamless="seamless"></iframe>
+
+
+
+
+
+
+  
+  <a href="{% url 'Beginner:string' %}">
+    <input type="button" class="btn btn-primary previous" value="Pervious Topic"></a>
+  <a href="{% url 'Beginner:input_and_output' %}">
+    <input type="button" class="btn btn-primary next" value="Next Topic"></a><br><br>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% load staticfiles %}
+
+table{
+    width:90%;
+    margin:5%;
+    font-size: 17px;
+    text-align: center;
+}
+caption{
+    text-align: center;
+}
+tr{
+    height:40px;
+}
+th{
+    text-align:center;
+}
